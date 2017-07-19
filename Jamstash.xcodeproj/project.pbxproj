@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012962B21F1FC97F0041948C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 012962B11F1FC97F0041948C /* AppDelegate.m */; };
+		012962B51F1FC97F0041948C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 012962B41F1FC97F0041948C /* main.m */; };
+		012962BA1F1FC97F0041948C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012962B91F1FC97F0041948C /* Assets.xcassets */; };
+		012962BD1F1FC9800041948C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012962BB1F1FC9800041948C /* Main.storyboard */; };
+		012962C61F1FC98F0041948C /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012962C41F1FC98F0041948C /* MainWindowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		012962AD1F1FC97F0041948C /* Jamstash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jamstash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		012962B01F1FC97F0041948C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		012962B11F1FC97F0041948C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		012962B41F1FC97F0041948C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		012962B91F1FC97F0041948C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		012962BC1F1FC9800041948C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		012962BE1F1FC9800041948C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		012962C41F1FC98F0041948C /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		012962C51F1FC98F0041948C /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		012962AA1F1FC97F0041948C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		012962A41F1FC97F0041948C = {
+			isa = PBXGroup;
+			children = (
+				012962AF1F1FC97F0041948C /* Jamstash */,
+				012962AE1F1FC97F0041948C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		012962AE1F1FC97F0041948C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				012962AD1F1FC97F0041948C /* Jamstash.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		012962AF1F1FC97F0041948C /* Jamstash */ = {
+			isa = PBXGroup;
+			children = (
+				012962B01F1FC97F0041948C /* AppDelegate.h */,
+				012962B11F1FC97F0041948C /* AppDelegate.m */,
+				012962B91F1FC97F0041948C /* Assets.xcassets */,
+				012962BE1F1FC9800041948C /* Info.plist */,
+				012962BB1F1FC9800041948C /* Main.storyboard */,
+				012962C51F1FC98F0041948C /* MainWindowController.h */,
+				012962C41F1FC98F0041948C /* MainWindowController.m */,
+				012962B31F1FC97F0041948C /* Supporting Files */,
+			);
+			path = Jamstash;
+			sourceTree = "<group>";
+		};
+		012962B31F1FC97F0041948C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				012962B41F1FC97F0041948C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		012962AC1F1FC97F0041948C /* Jamstash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012962C11F1FC9800041948C /* Build configuration list for PBXNativeTarget "Jamstash" */;
+			buildPhases = (
+				012962A91F1FC97F0041948C /* Sources */,
+				012962AA1F1FC97F0041948C /* Frameworks */,
+				012962AB1F1FC97F0041948C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jamstash;
+			productName = Jamstash;
+			productReference = 012962AD1F1FC97F0041948C /* Jamstash.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		012962A51F1FC97F0041948C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Nick Dowell";
+				TargetAttributes = {
+					012962AC1F1FC97F0041948C = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 012962A81F1FC97F0041948C /* Build configuration list for PBXProject "Jamstash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 012962A41F1FC97F0041948C;
+			productRefGroup = 012962AE1F1FC97F0041948C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				012962AC1F1FC97F0041948C /* Jamstash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		012962AB1F1FC97F0041948C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012962BA1F1FC97F0041948C /* Assets.xcassets in Resources */,
+				012962BD1F1FC9800041948C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		012962A91F1FC97F0041948C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012962B51F1FC97F0041948C /* main.m in Sources */,
+				012962C61F1FC98F0041948C /* MainWindowController.m in Sources */,
+				012962B21F1FC97F0041948C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		012962BB1F1FC9800041948C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				012962BC1F1FC9800041948C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		012962BF1F1FC9800041948C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		012962C01F1FC9800041948C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		012962C21F1FC9800041948C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Jamstash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickdowell.Jamstash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		012962C31F1FC9800041948C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Jamstash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickdowell.Jamstash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		012962A81F1FC97F0041948C /* Build configuration list for PBXProject "Jamstash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012962BF1F1FC9800041948C /* Debug */,
+				012962C01F1FC9800041948C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		012962C11F1FC9800041948C /* Build configuration list for PBXNativeTarget "Jamstash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012962C21F1FC9800041948C /* Debug */,
+				012962C31F1FC9800041948C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 012962A51F1FC97F0041948C /* Project object */;
+}
