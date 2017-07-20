@@ -12,6 +12,8 @@
 		012962BA1F1FC97F0041948C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012962B91F1FC97F0041948C /* Assets.xcassets */; };
 		012962BD1F1FC9800041948C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012962BB1F1FC9800041948C /* Main.storyboard */; };
 		012962C61F1FC98F0041948C /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012962C41F1FC98F0041948C /* MainWindowController.m */; };
+		017A889D1F212945001D1A8E /* SPMediaKeyTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A889C1F212572001D1A8E /* SPMediaKeyTap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		017A88A71F212961001D1A8E /* NSObject+SPInvocationGrabbing.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A88A31F212960001D1A8E /* NSObject+SPInvocationGrabbing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		012962BE1F1FC9800041948C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		012962C41F1FC98F0041948C /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		012962C51F1FC98F0041948C /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		017A889B1F212572001D1A8E /* SPMediaKeyTap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPMediaKeyTap.h; sourceTree = "<group>"; };
+		017A889C1F212572001D1A8E /* SPMediaKeyTap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPMediaKeyTap.m; sourceTree = "<group>"; };
+		017A88A21F212960001D1A8E /* NSObject+SPInvocationGrabbing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPInvocationGrabbing.h"; sourceTree = "<group>"; };
+		017A88A31F212960001D1A8E /* NSObject+SPInvocationGrabbing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SPInvocationGrabbing.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				012962AF1F1FC97F0041948C /* Jamstash */,
+				017A889A1F212572001D1A8E /* SPMediaKeyTap */,
 				012962AE1F1FC97F0041948C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +81,26 @@
 				012962B41F1FC97F0041948C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		017A889A1F212572001D1A8E /* SPMediaKeyTap */ = {
+			isa = PBXGroup;
+			children = (
+				017A889E1F212960001D1A8E /* SPInvocationGrabbing */,
+				017A889B1F212572001D1A8E /* SPMediaKeyTap.h */,
+				017A889C1F212572001D1A8E /* SPMediaKeyTap.m */,
+			);
+			path = SPMediaKeyTap;
+			sourceTree = "<group>";
+		};
+		017A889E1F212960001D1A8E /* SPInvocationGrabbing */ = {
+			isa = PBXGroup;
+			children = (
+				017A88A21F212960001D1A8E /* NSObject+SPInvocationGrabbing.h */,
+				017A88A31F212960001D1A8E /* NSObject+SPInvocationGrabbing.m */,
+			);
+			name = SPInvocationGrabbing;
+			path = ../../SPMediaKeyTap/SPInvocationGrabbing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +176,8 @@
 				012962B51F1FC97F0041948C /* main.m in Sources */,
 				012962C61F1FC98F0041948C /* MainWindowController.m in Sources */,
 				012962B21F1FC97F0041948C /* AppDelegate.m in Sources */,
+				017A88A71F212961001D1A8E /* NSObject+SPInvocationGrabbing.m in Sources */,
+				017A889D1F212945001D1A8E /* SPMediaKeyTap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +327,7 @@
 				012962C31F1FC9800041948C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
