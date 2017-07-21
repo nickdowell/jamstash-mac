@@ -99,8 +99,7 @@
 				017A88A21F212960001D1A8E /* NSObject+SPInvocationGrabbing.h */,
 				017A88A31F212960001D1A8E /* NSObject+SPInvocationGrabbing.m */,
 			);
-			name = SPInvocationGrabbing;
-			path = ../../SPMediaKeyTap/SPInvocationGrabbing;
+			path = SPInvocationGrabbing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
