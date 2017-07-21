@@ -93,16 +93,17 @@
 
 - (void)simulateKeyDownWithKeyCode:(unsigned short)keyCode character:(unichar)character {
 	NSString *chars = [NSString stringWithCharacters:&character length:1];
-	[self.window sendEvent:[NSEvent keyEventWithType:NSEventTypeKeyDown
+	NSEvent *event = [NSEvent keyEventWithType:NSEventTypeKeyDown
 											location:NSZeroPoint
-									   modifierFlags:0
-										   timestamp:0
+								 modifierFlags:0
+									 timestamp:0
 										windowNumber:0
 											 context:[NSGraphicsContext currentContext]
-										  characters:chars
+									characters:chars
 						 charactersIgnoringModifiers:chars
-										   isARepeat:NO
-											 keyCode:keyCode]];
+									 isARepeat:NO
+											 keyCode:keyCode];
+	[NSApp sendEvent:event];
 }
 
 @end
