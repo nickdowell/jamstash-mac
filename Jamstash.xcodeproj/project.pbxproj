@@ -14,6 +14,7 @@
 		012962C61F1FC98F0041948C /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012962C41F1FC98F0041948C /* MainWindowController.m */; };
 		017A889D1F212945001D1A8E /* SPMediaKeyTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A889C1F212572001D1A8E /* SPMediaKeyTap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		017A88A71F212961001D1A8E /* NSObject+SPInvocationGrabbing.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A88A31F212960001D1A8E /* NSObject+SPInvocationGrabbing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		01CF03731F2272ED00470A5B /* MainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CF03721F2272ED00470A5B /* MainWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		017A889C1F212572001D1A8E /* SPMediaKeyTap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPMediaKeyTap.m; sourceTree = "<group>"; };
 		017A88A21F212960001D1A8E /* NSObject+SPInvocationGrabbing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPInvocationGrabbing.h"; sourceTree = "<group>"; };
 		017A88A31F212960001D1A8E /* NSObject+SPInvocationGrabbing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SPInvocationGrabbing.m"; sourceTree = "<group>"; };
+		01CF03711F2272ED00470A5B /* MainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindow.h; sourceTree = "<group>"; };
+		01CF03721F2272ED00470A5B /* MainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				012962B91F1FC97F0041948C /* Assets.xcassets */,
 				012962BE1F1FC9800041948C /* Info.plist */,
 				012962BB1F1FC9800041948C /* Main.storyboard */,
+				01CF03711F2272ED00470A5B /* MainWindow.h */,
+				01CF03721F2272ED00470A5B /* MainWindow.m */,
 				012962C51F1FC98F0041948C /* MainWindowController.h */,
 				012962C41F1FC98F0041948C /* MainWindowController.m */,
 				012962B31F1FC97F0041948C /* Supporting Files */,
@@ -174,6 +179,7 @@
 			files = (
 				012962B51F1FC97F0041948C /* main.m in Sources */,
 				012962C61F1FC98F0041948C /* MainWindowController.m in Sources */,
+				01CF03731F2272ED00470A5B /* MainWindow.m in Sources */,
 				012962B21F1FC97F0041948C /* AppDelegate.m in Sources */,
 				017A88A71F212961001D1A8E /* NSObject+SPInvocationGrabbing.m in Sources */,
 				017A889D1F212945001D1A8E /* SPMediaKeyTap.m in Sources */,
