@@ -31,79 +31,79 @@
 @implementation MainWindowController
 
 + (void)load {
-	NSString *applicationSupport = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES).firstObject;
-	NSString *storagePath = [applicationSupport stringByAppendingPathComponent:[NSBundle mainBundle].bundleIdentifier];
-	[[WebPreferences standardPreferences] _setLocalStorageDatabasePath:storagePath];
-	[[WebPreferences standardPreferences] setLocalStorageEnabled:YES];
+    NSString *applicationSupport = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES).firstObject;
+    NSString *storagePath = [applicationSupport stringByAppendingPathComponent:[NSBundle mainBundle].bundleIdentifier];
+    [[WebPreferences standardPreferences] _setLocalStorageDatabasePath:storagePath];
+    [[WebPreferences standardPreferences] setLocalStorageEnabled:YES];
 }
 
 - (void)windowDidLoad {
     [super windowDidLoad];
 
-	self.webView = [[WebView alloc] initWithFrame:self.window.contentLayoutRect];
-	self.webView.frameLoadDelegate = self;
-	self.window.contentView = self.webView;
+    self.webView = [[WebView alloc] initWithFrame:self.window.contentLayoutRect];
+    self.webView.frameLoadDelegate = self;
+    self.window.contentView = self.webView;
 
-	NSURL *url = [NSURL URLWithString:@"http://jamstash.com"];
-	[self.webView.mainFrame loadRequest:[NSURLRequest requestWithURL:url]];
+    NSURL *url = [NSURL URLWithString:@"http://jamstash.com"];
+    [self.webView.mainFrame loadRequest:[NSURLRequest requestWithURL:url]];
 
-	self.keyTap = [[SPMediaKeyTap alloc] initWithDelegate:self];
-	if ([SPMediaKeyTap usesGlobalMediaKeyTap])
-		[self.keyTap startWatchingMediaKeys];
+    self.keyTap = [[SPMediaKeyTap alloc] initWithDelegate:self];
+    if ([SPMediaKeyTap usesGlobalMediaKeyTap])
+        [self.keyTap startWatchingMediaKeys];
 }
 
 - (void)webView:(WebView *)sender didReceiveTitle:(NSString *)title forFrame:(WebFrame *)frame {
-	self.window.title = title;
+    self.window.title = title;
 }
 
 - (void)webView:(WebView *)sender didReceiveIcon:(NSImage *)image forFrame:(WebFrame *)frame {
-	NSButton *button = [self.window standardWindowButton:NSWindowDocumentIconButton];
-	button.image = image;
+    NSButton *button = [self.window standardWindowButton:NSWindowDocumentIconButton];
+    button.image = image;
 }
 
 - (void)mediaKeyTap:(SPMediaKeyTap *)keyTap receivedMediaKeyEvent:(NSEvent *)event {
-	NSAssert(event.type == NSEventTypeSystemDefined && event.subtype == SPSystemDefinedEventMediaKeys, @"Unexpected NSEvent in mediaKeyTap:receivedMediaKeyEvent:");
+    NSAssert(event.type == NSEventTypeSystemDefined && event.subtype == SPSystemDefinedEventMediaKeys, @"Unexpected NSEvent in mediaKeyTap:receivedMediaKeyEvent:");
 
-	// here be dragons...
-	int keyCode = (([event data1] & 0xFFFF0000) >> 16);
-	int keyFlags = ([event data1] & 0x0000FFFF);
-	BOOL keyIsPressed = (((keyFlags & 0xFF00) >> 8)) == 0xA;
+    // here be dragons...
+    int keyCode = (([event data1] & 0xFFFF0000) >> 16);
+    int keyFlags = ([event data1] & 0x0000FFFF);
+    BOOL keyIsPressed = (((keyFlags & 0xFF00) >> 8)) == 0xA;
 
-	if (!keyIsPressed)
-		return;
+    if (!keyIsPressed)
+        return;
 
-	switch (keyCode) {
-		case NX_KEYTYPE_PLAY:
-			[self simulateKeyDownWithKeyCode:49 character:' '];
-			break;
+    switch (keyCode) {
+        case NX_KEYTYPE_PLAY:
+            [self simulateKeyDownWithKeyCode:49 character:' '];
+            break;
 
-		case NX_KEYTYPE_FAST:
-			[self simulateKeyDownWithKeyCode:124 character:NSRightArrowFunctionKey];
-			break;
+        case NX_KEYTYPE_FAST:
+            [self simulateKeyDownWithKeyCode:124 character:NSRightArrowFunctionKey];
+            break;
 
-		case NX_KEYTYPE_REWIND:
-			[self simulateKeyDownWithKeyCode:123 character:NSLeftArrowFunctionKey];
-			break;
+        case NX_KEYTYPE_REWIND:
+            [self simulateKeyDownWithKeyCode:123 character:NSLeftArrowFunctionKey];
+            break;
 
-		default:
-			// More cases defined in hidsystem/ev_keymap.h
-			break;
-	}
+        default:
+            // More cases defined in hidsystem/ev_keymap.h
+            break;
+    }
 }
 
 - (void)simulateKeyDownWithKeyCode:(unsigned short)keyCode character:(unichar)character {
-	NSString *chars = [NSString stringWithCharacters:&character length:1];
-	NSEvent *event = [NSEvent keyEventWithType:NSEventTypeKeyDown
-											location:NSZeroPoint
-								 modifierFlags:0
-									 timestamp:0
-										windowNumber:0
-											 context:[NSGraphicsContext currentContext]
-									characters:chars
-						 charactersIgnoringModifiers:chars
-									 isARepeat:NO
-											 keyCode:keyCode];
-	[NSApp sendEvent:event];
+    NSString *chars = [NSString stringWithCharacters:&character length:1];
+    NSEvent *event = [NSEvent keyEventWithType:NSEventTypeKeyDown
+                                      location:NSMakePoint(5, 5)
+                                 modifierFlags:0
+                                     timestamp:GetCurrentEventTime()
+                                  windowNumber:self.window.windowNumber
+                                       context:[NSGraphicsContext currentContext]
+                                    characters:chars
+                   charactersIgnoringModifiers:chars
+                                     isARepeat:NO
+                                       keyCode:keyCode];
+    [NSApp sendEvent:event];
 }
 
 @end

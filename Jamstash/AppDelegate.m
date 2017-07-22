@@ -11,8 +11,8 @@
 @implementation AppDelegate
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)hasVisibleWindows {
-	[sender.windows.firstObject makeKeyAndOrderFront:sender];
-	return NO;
+    [sender.windows.firstObject makeKeyAndOrderFront:sender];
+    return NO;
 }
 
 @end
